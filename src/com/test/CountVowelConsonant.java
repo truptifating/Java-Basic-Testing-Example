@@ -12,7 +12,7 @@ public class CountVowelConsonant {
             
         //Converting entire string to lower case to reduce the comparisons    
         str = str.toLowerCase();    
-            
+         System.out.println("After convering to lower case-->>"+str);   
         for(int i = 0; i < str.length(); i++) {    
             //Checks whether a character is a vowel    
             if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {    

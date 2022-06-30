@@ -26,7 +26,7 @@ public class HashMapEx {
 			System.out.println("Printing keys only-->"+i);
 		}
 		
-		// Loop through hash map and printing keys only
+		// Loop through hash map and printing Values only
 		for(String j:hm.values() ) 
 		{
 			System.out.println("Printing Values only-->"+j);

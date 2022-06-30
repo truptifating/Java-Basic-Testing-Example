@@ -3,6 +3,9 @@ package com.numbers.prog;
 public class FibonacciSeries 
 {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) 
 	{
 		int n1=0, n2=1, n3,count=5;
@@ -15,7 +18,7 @@ public class FibonacciSeries
 			   n1=n2;
 			   n2=n3;  
 		   }
-		
+		                           
 	}
 
 }

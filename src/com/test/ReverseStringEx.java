@@ -4,12 +4,12 @@ public class ReverseStringEx {
 	
 	public void reverseWordInMyString(String str)
 	   {
-		/* The split() method of String class splits
-		 * a string in several strings based on the
-		 * delimiter passed as an argument to it
-		 */
+		
 		String[] words = str.split(" ");		
 		String reversedString = "";
+		
+		
+		
 		for (int i = 0; i < words.length; i++)
 	        {
 			   System.out.println("Splitted string is " +words[i]);
@@ -17,8 +17,7 @@ public class ReverseStringEx {
 	           String reverseWord = "";
 	           	for (int j = word.length()-1; j >= 0; j--) 
 	           {
-	           			/* The charAt() function returns the character
-	           			 * at the given position in a string*/
+	           			
 			 		
 	           		reverseWord = reverseWord + word.charAt(j);
 	           }
@@ -31,7 +30,7 @@ public class ReverseStringEx {
 
 	public static void main(String[] args) {
 		ReverseStringEx obj1= new ReverseStringEx();
-		obj1.reverseWordInMyString("Welcome to BeginnersBook");
+		obj1.reverseWordInMyString("Welcome to Beginners Book");
 		obj1.reverseWordInMyString("This is an easy Java Program");
 
 	}

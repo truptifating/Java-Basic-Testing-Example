@@ -6,7 +6,7 @@ public class CheckForPalindromString
 	
 	public static void main(String[] args) 
 	{
-		String str="trupti", reverse="";
+		String str="12321", reverse="";
 	      
 	      
 	      
@@ -20,10 +20,10 @@ public class CheckForPalindromString
 	     
 	     if(str.equals(reverse))
 	     {
-	    	 System.out.println("String is palindrom");
+	    	 System.out.println("String is palindrome");
 	     }
 	     else {
-	    	 System.out.println("String is not palindrom");
+	    	 System.out.println("String is not palindrome");
 	     }
 	      
 
