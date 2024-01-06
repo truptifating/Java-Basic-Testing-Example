@@ -8,6 +8,7 @@ public class StringDivide {
 		  
         //Stores the length of the string  
         int len = str.length();  
+        System.out.println("Lenght of string is-->>"+len);
         //n determines the variable that divide the string in 'n' equal parts  
         int n = 3;  
         int temp = 0, chars = len/n; 

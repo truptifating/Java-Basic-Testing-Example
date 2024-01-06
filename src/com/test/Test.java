@@ -16,41 +16,32 @@ public class Test
 {
 	public static void main(String[] args)
 	{
-		String str1="Grab";
-		String str2="Brag";
+		int num=7, flag=0;
+		int n=num/2;
 		
-		System.out.println(str1);
-		System.out.println(str2);
-		
-		String str3=str1.toLowerCase();
-		String str4=str2.toLowerCase();
-		
-		System.out.println(str3);
-		System.out.println(str4);
-		
-		if(str1.length()!=str2.length())
+		if(num==0 || num==1)
 		{
-			System.out.println("String is not anagram");
+			System.out.println("num is not prime no");
 		}
-		else 
+		else
 		{
-			char ch1[]=str3.toCharArray();
-			char ch2[]=str4.toCharArray();
-			
-			Arrays.sort(ch1);
-			Arrays.sort(ch2);
-			
-			if(Arrays.equals(ch1, ch2)==true) 
-			{System.out.println("String is anagram");
-			}
-			else
+			for(int i=2;i<=n;i++)
 			{
-				System.out.println("String is not anagram");
+				if(num%i==0)
+				{
+					System.out.println("num is not prime no");
+					flag=1;
+					break;
+				}
 			}
+			if(flag==0)
+			{
+				System.out.println("num is prime no");
+			}
+			
+			
 		}
-		
-		
-		
+	
 	}
 }
 	

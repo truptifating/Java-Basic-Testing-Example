@@ -10,8 +10,9 @@ public class ArmstrongNoProgramm
 		    temp=n;  
 		    while(n>0)  
 		    {  
-		    a=n%10;  
-		    n=n/10;  
+		    a=n%10;   //it will take remainder
+		    n=n/10;  //it will take quotient
+		    
 		    c=c+(a*a*a);  		    
 		    }  
 		   // System.out.println("c"+c);

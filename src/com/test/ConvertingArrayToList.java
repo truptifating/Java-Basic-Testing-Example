@@ -8,6 +8,7 @@ public class ConvertingArrayToList {
 
 	public static void main(String[] args) {
 		
+		//Converting Array to Array List
 		String citynames[]= {"Pune","Mumbai","Nagpur"}; // Declairing Array
 		System.out.println("Print the array before conversion"+Arrays.toString(citynames));
 		
@@ -22,9 +23,18 @@ public class ConvertingArrayToList {
 			System.out.println(str);
 		}
 		
+		// Converting Array List to Array
+		ArrayList<String> newList= new ArrayList<String>(Arrays.asList("Trupti","Ram","Vishnu","Trupti","Motghare","Fating"));
+		System.out.println("Array List before converting to Array-->>"+newList);
+		Object arr[]= newList.toArray();
+		System.out.println(Arrays.toString(arr));
 		
-		
-		
+		//Iterating array
+				for(Object o:arr)
+				{
+					//System.out.println((String)o);
+					System.out.println(o);
+				}
 		
 		
 		

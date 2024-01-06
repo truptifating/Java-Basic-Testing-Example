@@ -8,7 +8,7 @@ public class CheckForPalindromString
 	{
 		String str="12321", reverse="";
 	      
-	      
+		System.out.println(str.length());
 	      
 	      for(int i=str.length()-1;i>=0;i--)
 	      {
