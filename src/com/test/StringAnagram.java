@@ -22,20 +22,21 @@ public class StringAnagram {
         }  
         else {  
             //Converting both the arrays to character array  
-            char[] string1 = str1.toCharArray();  
-            char[] string2 = str2.toCharArray();  
+            char[] array1 = str1.toCharArray();  
+            char[] array2 = str2.toCharArray();  
             
-            System.out.println("Value string 1-" +string1);
-            System.out.println("Value string 2-" +string2);
+            System.out.println("CHaracters in Array1 before sorting--->"+Arrays.toString(array1));
+            System.out.println("CHaracters in Array2 before sorting--->"+Arrays.toString(array2));
   
             //Sorting the arrays using in-built function sort ()  
-            Arrays.sort(string1);  
-            Arrays.sort(string2);  
+            Arrays.sort(array1);  
+            Arrays.sort(array2);  
             
-            
+            System.out.println("CHaracters in Array1 after sorting--->"+Arrays.toString(array1));
+            System.out.println("CHaracters in Array2 after sorting--->"+Arrays.toString(array2));
   
             //Comparing both the arrays using in-built function equals ()  
-            if(Arrays.equals(string1, string2) == true) {  
+            if(Arrays.equals(array1, array2) == true) {  
                 System.out.println("Both the strings are anagram");  
             }  
             else {  

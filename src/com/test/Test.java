@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Scanner;
 
 import javax.print.DocFlavor.CHAR_ARRAY;
@@ -16,32 +17,28 @@ public class Test
 {
 	public static void main(String[] args)
 	{
-		int num=7, flag=0;
-		int n=num/2;
+		int targetLength=10;
+		int rightLimit=97;
+		int leftLimit=122;
 		
-		if(num==0 || num==1)
+		Random r= new Random();
+		StringBuilder buffer=new StringBuilder(targetLength);
+		System.out.println(r.nextFloat());
+		
+		for(int i=0;i<targetLength;i++)
 		{
-			System.out.println("num is not prime no");
+			int a=rightLimit+(int)(r.nextFloat()*(leftLimit-rightLimit+1));
+			System.out.println(a);
+			System.out.println(buffer.append((char)a));
 		}
-		else
-		{
-			for(int i=2;i<=n;i++)
-			{
-				if(num%i==0)
-				{
-					System.out.println("num is not prime no");
-					flag=1;
-					break;
-				}
-			}
-			if(flag==0)
-			{
-				System.out.println("num is prime no");
-			}
-			
-			
-		}
-	
+		
+		String generatedString=buffer.toString();
+		System.out.println("generatedString-->>"+generatedString);
+		String finalString="DB__"+generatedString;
+		System.out.println(finalString);
+		
+		
+		
 	}
 }
 	
