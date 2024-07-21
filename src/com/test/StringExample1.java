@@ -23,11 +23,13 @@ public class StringExample1 {
 		System.out.println(s4==s5);
 		System.out.println("s4.equals(s5)--->"+s4.equals(s5));
 		
+		System.out.println("-------NextCode--1-----");
 		String s6="a";
 		String s7="a";
 		System.out.println(s6==s7);
 		System.out.println("s6.equals(s7)--->"+s6.equals(s7));
 		
+		System.out.println("-------NextCode--2-----");
 		String s8= new String("a");
 		String s9= new String("a");
 		System.out.println(s8==s9);

@@ -17,6 +17,8 @@ public class ReverseStringInStringBuffer {
 		String str= new String("Trupti");
 		str.concat("Fating");
 		System.out.println("Output of String after concat-->>"+str);
+		str=str.concat("Fating");
+		System.out.println("Output of String after concat-->>"+str);
 		String str3=str.concat("Fating");
 		System.out.println("Output of String str3-->>"+str3); // As string is immutable and hence it will print Trupti only
 		System.out.println("String after concatination---->>"+str.concat("Fating"));

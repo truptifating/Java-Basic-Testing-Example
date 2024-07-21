@@ -15,30 +15,24 @@ import javax.xml.crypto.KeySelectorResult;
 
 public class Test 
 {
-	public static void main(String[] args)
+	private double balance;
+	
+	public void setBalance(double balance)
 	{
-		int targetLength=10;
-		int rightLimit=97;
-		int leftLimit=122;
-		
-		Random r= new Random();
-		StringBuilder buffer=new StringBuilder(targetLength);
-		System.out.println(r.nextFloat());
-		
-		for(int i=0;i<targetLength;i++)
+		if(balance<=0)
 		{
-			int a=rightLimit+(int)(r.nextFloat()*(leftLimit-rightLimit+1));
-			System.out.println(a);
-			System.out.println(buffer.append((char)a));
+			System.out.println("DO not enter negative balance");
 		}
-		
-		String generatedString=buffer.toString();
-		System.out.println("generatedString-->>"+generatedString);
-		String finalString="DB__"+generatedString;
-		System.out.println(finalString);
-		
-		
-		
+		else
+		{
+			balance=this.balance;
+		}
+	}
+	public double getBalanace()
+	{
+		return balance;
 	}
 }
+
+
 	

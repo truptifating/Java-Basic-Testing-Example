@@ -1,37 +1,27 @@
 package com.numbers.prog;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Random;
 
 public class Test {
+	
 
 	public static void main(String[] args) 
 	{
+		int i,j,row=9;
 		
-      int vCount=0, cCount=0;      
-      String str="I am a good mother";      
-      str=str.toLowerCase();      
-      System.out.println(str);
-     
-      for(int i=0;i<str.length();i++)
-      {
-    	  if(str.charAt(i) =='a' || str.charAt(i) =='e' || str.charAt(i) =='i' || str.charAt(i) =='o' || str.charAt(i) =='u')
-          {
-        	  vCount++;
-          }
-    	  else if(str.charAt(i) >= 'a' && str.charAt(i) <= 'z')
-    	  {
-    		  cCount++;
-    	  }
-      }
-      
-      System.out.println("No os vowels"+vCount);
-      System.out.println("No os vowels"+cCount);
-      
-      
-      
-      
-      
+		for(i=0;i<row;i++)
+		{
+			for(j=row-i;j>1;j--)
+			{
+				System.out.print(" ");
+			}
+			for(j=0;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
 	}
 
 }
+///classname.main(new String[0])

@@ -7,7 +7,10 @@ public class ArrayToList_ListToArray {
 
 	public static void main(String[] args) 
 	{
-		String citynames[]= {"Pune","Mumbai","Nagpur"}; // Declairing Array
+		// Declairing Array
+		String citynames[]= {"Pune","Mumbai","Nagpur"}; 
+		
+		//Printing Array
 		System.out.println("Print the array before conversion-->>"+Arrays.toString(citynames));
 		
 		// Converting array to array list
@@ -16,6 +19,8 @@ public class ArrayToList_ListToArray {
 		
 	    //Converting array list to array
 		Object arr[]=citylist.toArray(); 
+		
+		//Printing Array
 		System.out.println("Printing the array-->>"+Arrays.toString(arr));
 
 	}

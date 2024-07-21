@@ -32,7 +32,10 @@ public class XpathLearning {
 		
 		///label[text()='Password']/following::input[1]
 		
-
+// Note- ancestor-or-self  OR descendant-or-self will include the current div tag
+		
+		// Differance between preceding-sibling and preceding is when we say preceding-sibling means only sibling before that element
+		// and preceding means not only sibling but all the element before that element
 	}
 
 }

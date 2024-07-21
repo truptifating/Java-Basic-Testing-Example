@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.Arrays;
+
 public class StringDivide {
 
 	public static void main(String[] args) 
@@ -16,7 +18,7 @@ public class StringDivide {
         
         //Stores the array of string  
         String[] equalStr = new String [n];  
-        System.out.println("Array of string" +equalStr);
+        System.out.println("Array of string-->>" +Arrays.toString(equalStr));
         
         //Check whether a string can be divided into n equal parts  
         if(len % n != 0) {  

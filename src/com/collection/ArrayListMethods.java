@@ -17,6 +17,7 @@ public class ArrayListMethods {
 		ArrayList<String> ar2= new ArrayList<String>();
 		ar2.add("Testing");
 		ar2.add("Devops");
+		System.out.println(ar2);
 		
 	//	ar1.addAll(ar2);
 	//	System.out.println("After adding ar1 and ar2--->>"+ar1);
@@ -27,7 +28,7 @@ public class ArrayListMethods {
 	//	System.out.println(ar1);
 		
 		ArrayList<String> cloneList=(ArrayList<String>)ar1.clone();
-		System.out.println("List after clonning"+cloneList);
+		System.out.println("List after clonning--->>"+cloneList);
 		
 		System.out.println(ar1.contains("Python"));
 		System.out.println(ar1.contains("C"));		

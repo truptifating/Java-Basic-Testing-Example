@@ -36,12 +36,16 @@ public class StringAnagram {
             System.out.println("CHaracters in Array2 after sorting--->"+Arrays.toString(array2));
   
             //Comparing both the arrays using in-built function equals ()  
-            if(Arrays.equals(array1, array2) == true) {  
+            /*if(Arrays.equals(array1, array2) == true) {  
                 System.out.println("Both the strings are anagram");  
             }  
             else {  
                 System.out.println("Both the strings are not anagram");  
-            }  
+            }  */
+            
+            
+            
+            
         }  
 
 	}
