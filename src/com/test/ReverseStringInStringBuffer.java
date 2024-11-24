@@ -12,11 +12,11 @@ public class ReverseStringInStringBuffer {
 		obj.reverse();
 		System.out.println(obj);
 		
-		
+		System.out.println("String Program");
 		//STring Program
 		String str= new String("Trupti");
 		str.concat("Fating");
-		System.out.println("Output of String after concat-->>"+str);
+		System.out.println("Output of String-->>"+str);
 		str=str.concat("Fating");
 		System.out.println("Output of String after concat-->>"+str);
 		String str3=str.concat("Fating");

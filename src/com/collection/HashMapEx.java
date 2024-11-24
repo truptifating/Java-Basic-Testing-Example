@@ -40,11 +40,25 @@ public class HashMapEx {
 		hm.remove("Rajasthan");
 		System.out.println("City and its capital after removing rajasthan-->"+hm);
 		
-		hm.clear();
-		System.out.println("Clearing all the City's and its capital-->"+hm);
+		/*hm.clear();
+		System.out.println("Clearing all the City's and its capital-->"+hm);*/
 		
-		
+		//Validating the keys in Maps
+		if(hm.containsKey("UP"))
+		{
+			System.out.println("Entry Key is verified");
+		}
+		//Validating the keys in Maps
 
+		if(hm.containsValue("Lukhnow"))
+		{
+			System.out.println("Entry Value is verified");
+		}
+		//Validating the keys and value in Maps
+		if(hm.containsKey("Maharashtra"))
+		{
+			System.out.println("Printing value of key-->>"+hm.get("Maharashtra"));
+		}
 	}
 
 }

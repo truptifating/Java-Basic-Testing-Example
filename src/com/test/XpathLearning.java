@@ -31,11 +31,16 @@ public class XpathLearning {
 		//div[@class='buttons']/ancestor-or-self::div
 		
 		///label[text()='Password']/following::input[1]
+		//span[text()='Redmi']/parent::a/descendant::label/child::input[@type='checkbox']
+		
+		//a[(@title='Cart')and(@class='_1krdK5 _3jeYYh')]
+		//div[@class='suthUA']/child::select[@class='Gn+jFg']/child::option[@value='10000']
+		//div[@class='suthUA']/descendant::option[@value='10000']
 		
 // Note- ancestor-or-self  OR descendant-or-self will include the current div tag
 		
 		// Differance between preceding-sibling and preceding is when we say preceding-sibling means only sibling before that element
 		// and preceding means not only sibling but all the element before that element
 	}
-
+//tagname[@locator='value']/following-sibling::tagname[@locator='value']
 }

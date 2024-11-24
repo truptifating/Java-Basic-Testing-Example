@@ -8,24 +8,15 @@ public class GeneratingRandomNo {
 	public static void main(String[] args) {
 		 //ASCII value of a-z is 97 to 122 && ASCII value of A-Z is 65-90
 		//ASCII value of 0-9 is 48-57
-		
-		int lowerLimit=48,upperLimit=57;
-		int targetLimit=2;
-		int b=0;
-		
+		/*int lowerLimit=48,upperLImit=57;
+        Random r= new Random();
+        int a=(int)(r.nextFloat()*(upperLImit-lowerLimit));
+        System.out.println("FinalValue--"+a);
+	*/
 		Random r= new Random();
+		int a=r.nextInt(10);
+		System.out.println(a);
 		
-		for(int i=0;i<=targetLimit;i++)
-		{
-			int a=(int)(r.nextFloat()*(upperLimit-lowerLimit));
-			//System.out.println(a);
-			b=b+a;
-		}
-		System.out.println(b);
-		
-		
-	       
-	        
 	}
 
 }

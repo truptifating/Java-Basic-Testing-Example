@@ -16,6 +16,7 @@ public class IncreamentDecreamentOperator {
 		System.out.println("Value of y after dcreament is" +y);
 		
 		System.out.println("Value of x befor increament is" +x++);
+		System.out.println(x);
 		System.out.println("Value of x befor increament is" + ++x);
 		
 		

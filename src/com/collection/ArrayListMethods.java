@@ -62,7 +62,7 @@ public class ArrayListMethods {
 		//Converting arrayList to Array
 		
 		ArrayList<String> newList= new ArrayList<String>(Arrays.asList("Trupti","Ram","Vishnu","Trupti","Motghare","Fating"));
-		Object arr[]=newList.toArray();
+		Object arr[]=newList.toArray();//java.lang.objectclass//object array is the collection of dissimilar objects or elements
 		System.out.println(Arrays.toString(arr));
 		
 		//Iterating array

@@ -8,25 +8,20 @@ public class Test {
 
 	public static void main(String[] args) 
 	{
-		int []a1={1,2,3};
-	      int []a2={4,5,6};
-	      int length= a1.length + a2.length;
-	       System.out.println("length is-->>"+length);
-	      int []result = new int[length];
-	      int pos=0;
-	      
-	      for(int element:a1)
-	      {
-	         result[pos]=element;
-	         pos++;
-	      }
-	      
-	      for(int element:a2)
-	      {
-	         result[pos]=element;
-	         pos++;
-	      }
-	      System.out.println(Arrays.toString(result));
+		 int row=6,i,j;
+		 
+		 for(i=0;i<row;i++)
+		 {
+			 for(j=2*(row-i);j>1;j--)
+			 {
+				 System.out.print(" ");
+			 }
+			 for(j=0;j<=i;j++)
+			 {
+				 System.out.print("* ");
+			 }
+			 System.out.println();
+		 }
 	}
 
 }
